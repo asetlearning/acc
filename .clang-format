@@ -1,0 +1,58 @@
+---
+Language:        Cpp
+BasedOnStyle:  LLVM
+
+AccessModifierOffset: -2
+
+AlignAfterOpenBracket: AlwaysBreak
+
+BinPackArguments: false
+BinPackParameters: false
+
+Cpp11BracedListStyle: true
+
+# Only empty functions may be single-lined
+AllowShortFunctionsOnASingleLine: Empty
+
+# Otherwise you don't see the return type
+AlwaysBreakTemplateDeclarations: true
+
+# Strings looks nicer on a new line
+AlwaysBreakBeforeMultilineStrings: true
+
+# Binary operator should be the first symbol
+BreakBeforeBinaryOperators: NonAssignment
+
+# allows to easily add new initializers
+BreakConstructorInitializersBeforeComma: true
+
+# we have wide screens
+ColumnLimit:     120
+
+ConstructorInitializerIndentWidth: 2
+
+# use Google's include categories
+IncludeCategories: 
+  - Regex:           '^<.*\.h>'
+    Priority:        1
+  - Regex:           '^<.*'
+    Priority:        2
+  - Regex:           '.*'
+    Priority:        3
+
+IndentCaseLabels: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 2
+
+PenaltyBreakBeforeFirstCallParameter: 50
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 90
+PenaltyBreakString: 500
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 20
+
+PointerAlignment: Left
+SpaceAfterCStyleCast: true
+SpacesBeforeTrailingComments: 1
+...
+
